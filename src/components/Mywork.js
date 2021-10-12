@@ -1,31 +1,26 @@
 import React from 'react';
 // import '../styles/Header.css';
-import Navigation from './Navigation';
+import Project from './Project';
 
 const styles = {
-  heading: {
-    display: 'flex',
-    background: '#97B8C2',
-    fontSize: '34px',
-    color: '#011E3D',
-    justifyContent: 'space-around',
-    alignItems: 'center',
+  work: {
+    
   }
 }
 
 
 function Header() {
   return (
+    <div className='container'>
       <section className='row'>
-        <div style={styles.heading}>
           <div className='col-lg-4 col-md-12 col-sm-12'>
-            <h2 >Charlotte Clark</h2>
+            <h2>My Work</h2>
           </div>
           <div className='col-lg-7 col-md-12'>
-            <Navigation />
+            <Project />
           </div>
-        </div>
       </section>
+    </div>
   );
 }
 
