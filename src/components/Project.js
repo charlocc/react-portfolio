@@ -42,16 +42,15 @@ const styles = {
 
 
 
-
-function Project() {
+function Project(props) {
   return (
     <div style={styles.card}>
       <div>
-        <h3 style={styles.cardHeader}>Title of work</h3>
+        <h3 style={styles.cardHeader}>{props.title}</h3>
       </div>
       <div style={styles.cardHeader}>
-        <div>Here is some more info about the work</div>
-        <img style={styles.cardImage} src='./images/bigtechblog.png' alt="Charlotte Clark" />
+        <div>{props.description}</div>
+        <img style={styles.cardImage} src={props.imageSrc} alt={props.imageAlt} />
       </div>
     </div>
   );
