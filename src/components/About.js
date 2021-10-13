@@ -1,5 +1,15 @@
 import React from 'react';
 
+const styles = {
+    picture: {
+        padding: '1%',
+        height: '25%',
+        border: '#011E3D solid 2px',
+        backgroundColor: '#97B8C2',
+        borderRadius: '9px',
+    }
+  }
+
 export default function About() {
   return (
     <div className='container'>
@@ -29,8 +39,9 @@ export default function About() {
                         </ul>
                     </div>
                 </div>
-            <img className='col-lg-3 col-md-5 col-sm-12' src='./images/charlotte2.jpg'
-                alt="picture of charlotte"/>
+                <div className='col-lg-3 col-md-5 col-sm-12'>
+                    <img style={styles.picture} src='./images/charlotte2.jpg' alt="picture of charlotte"/>
+                </div>
         </section>
     </div>
   );

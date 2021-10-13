@@ -14,9 +14,12 @@ function Header() {
     <div className='container'>
       <section className='row'>
           <div className='col-lg-4 col-md-12 col-sm-12'>
-            <h2>My Work</h2>
+            <h2 id="mywork">My Work</h2>
           </div>
-          <div className='col-lg-7 col-md-12'>
+          <div className='col-lg-7 col-md-12 row'>
+            <Project />
+            <Project />
+            <Project />
             <Project />
           </div>
       </section>
