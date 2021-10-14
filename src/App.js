@@ -3,10 +3,19 @@ import Header from './components/Header';
 import About from './components/About';
 import Mywork from './components/Mywork';
 import Footer from './components/Header';
+const styles = {
+  background: {
+      backgroundImage: `url(./images/background.jpg)`,
+      backgroundAttachment: 'fixed',
+      backgroundSize: 'cover',
+      width: '100vw',
+  }
+};
 
 function App() {
+  
   return (
-    <div>
+    <div style={styles.background}>
       <div>
         <Header />
       </div>

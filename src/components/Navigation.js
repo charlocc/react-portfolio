@@ -4,36 +4,37 @@ import React from 'react';
 
 const styles = {
   navigation: {
-    background: '#97B8C2',
-    fontSize: '25px',
-    color: '#011E3D',
-    justifyContent: 'space-around',
-    width: '100%'
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%',
+    listStyleType: 'none'
   },
   text: {
-    background: '#97B8C2',
-    fontSize: '25px',
+    fontSize: '20px',
     color: '#011E3D',
+    textDecoration: 'none',
+
   }
 };
 
 
+
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg" >
-      <div className="navbar-collapse" style={styles.navigation}>
-        <ul className="navbar-nav mr-auto" >
-          <li className="nav-item">
-            <a className="nav-link" style={styles.text} href="#aboutme">About Me</a>
+    <nav className='container'>
+      <div className='row'>
+        <ul style={styles.navigation}>
+          <li>
+            <a  style={styles.text} href="#aboutme">About Me</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" style={styles.text} href="#mywork">My Work</a>
+          <li>
+            <a  style={styles.text} href="#mywork">My Work</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" style={styles.text} href="#contact">Contact</a>
+          <li >
+            <a  style={styles.text} href="#contact">Contact</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" style={styles.text} href="#resume">Resume</a>
+          <li >
+            <a  style={styles.text} href="#resume">Resume</a>
           </li>
         </ul>
       </div>
@@ -41,6 +42,8 @@ function Navbar() {
 
   );
 }
+
+
 
 
 

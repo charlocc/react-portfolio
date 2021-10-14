@@ -10,22 +10,23 @@ const styles = {
     color: '#011E3D',
     justifyContent: 'space-around',
     alignItems: 'center',
+    borderBottom: '#011E3D solid 2px'
   }
 }
 
 
 function Header() {
   return (
-      <section className='row'>
-        <div style={styles.heading}>
-          <div className='col-lg-4 col-md-12 col-sm-12'>
-            <h2 >Charlotte Clark</h2>
-          </div>
-          <div className='col-lg-7 col-md-12'>
-            <Navigation />
-          </div>
+    <section >
+      <div style={styles.heading} className='row'>
+        <div className='col-lg-4 col-sm-12'>
+          <h2 >Charlotte Clark</h2>
         </div>
-      </section>
+        <div className='col-lg-6 col-12-sm'>
+          <Navigation />
+        </div>
+      </div>
+    </section>
   );
 }
 
