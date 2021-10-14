@@ -51,10 +51,10 @@ function Mywork() {
     <div className='container'>
       <section className='row'>
 
-        <div className='col-lg-4 col-md-12 col-sm-12'>
+        <div className='col-lg-3 col-md-12 col-sm-12'>
           <h2 id='mywork'>My Work</h2>
         </div>
-        <div className='col-lg-8 col-md-12 row'>
+        <div className='col-lg-9 col-md-12 row'>
             {works.map((work) => (
               <Project title={work.title} description={work.description} key={work.id} imageSrc={work.imageSrc} imageAlt={work.imageAlt} url={work.url}/>
             ))}

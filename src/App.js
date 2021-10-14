@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import About from './components/About';
 import Mywork from './components/Mywork';
+import Contact from './components/Contact';
 import Footer from './components/Header';
 const styles = {
   background: {
@@ -24,6 +25,9 @@ function App() {
       </div>
       <div>
         <Mywork />
+      </div>
+      <div>
+        <Contact />
       </div>
       {/* <div>
         <Footer />
