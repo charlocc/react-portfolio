@@ -33,12 +33,15 @@ const styles = {
     lang: {
         margin: '5px',
         marginRight: '5px'
+    },
+    marginAbove: {
+        margin: '2%',
     }
 }
 
 export default function About() {
     return (
-        <div className='container'>
+        <div className='container' style={styles.marginAbove}>
             <section className='row'>
                 <div className='col-lg-3 col-md-12 col-sm-12'>
                     <h2 id="aboutme">About Me</h2>

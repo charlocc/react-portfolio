@@ -45,10 +45,15 @@ const works = [
   },
 ]
 
+const styles = {
+  margin: {
+    margin: '2%',
+  }
+}
 
 function Mywork() {
   return (
-    <div className='container'>
+    <div className='container' style={styles.margin}>
       <section className='row'>
 
         <div className='col-lg-3 col-md-12 col-sm-12'>

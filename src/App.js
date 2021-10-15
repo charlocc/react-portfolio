@@ -3,7 +3,8 @@ import Header from './components/Header';
 import About from './components/About';
 import Mywork from './components/Mywork';
 import Contact from './components/Contact';
-import Footer from './components/Header';
+import Footer from './components/Footer';
+
 const styles = {
   background: {
       backgroundImage: `url(./images/background.jpg)`,
@@ -29,9 +30,9 @@ function App() {
       <div>
         <Contact />
       </div>
-      {/* <div>
+      <div>
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 }

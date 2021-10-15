@@ -13,12 +13,15 @@ const styles = {
     link: {
         textDecoration: 'none',
         color: '#011E3D'
+    },
+    margin: {
+      margin: '2%',
     }
   }
 
 function Contact() {
     return (
-      <div className='container'>
+      <div className='container' style={styles.margin}>
         <section className='row'>
           <div className='col-lg-3 col-md-12 col-sm-12'>
             <h2 id='contact'>Contact</h2>
@@ -28,6 +31,7 @@ function Contact() {
                 <li><a style={styles.link} href="mailto:charlotte.clark@alumni.usc.edu">Email</a></li>
                 <li><a style={styles.link} href="https://www.linkedin.com/in/charlotte-clark-ba486213a/">LinkedIn</a></li>
                 <li><a style={styles.link} href="https://github.com/charlocc">Github</a></li>
+                <li><a style={styles.link} href="../documents/Charlotte_Clark_Resume.pdf">Resume</a></li>
             </ul>
           </div>
         </section>

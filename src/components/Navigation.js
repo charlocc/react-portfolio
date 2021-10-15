@@ -34,7 +34,7 @@ function Navbar() {
             <a  style={styles.text} href="#contact">Contact</a>
           </li>
           <li >
-            <a  style={styles.text} href="#resume">Resume</a>
+            <a  style={styles.text} href="#contact">Resume</a>
           </li>
         </ul>
       </div>
