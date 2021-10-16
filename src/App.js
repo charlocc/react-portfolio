@@ -7,11 +7,12 @@ import Footer from './components/Footer';
 
 const styles = {
   background: {
-      backgroundImage: `url(./images/background.jpg)`,
-      backgroundAttachment: 'fixed',
-      backgroundSize: 'cover',
-      width: '100vw',
-  }
+    backgroundImage: `url(./images/background.jpg)`,
+    backgroundAttachment: 'fixed',
+    backgroundSize: 'cover',
+    width: '100vw',
+    fontFamily:'Poppins',
+  },
 };
 
 function App() {

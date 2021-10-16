@@ -12,10 +12,6 @@ const styles = {
     borderRadius: '9px',
     margin: '2%',
     width: '45%',
-    // '&:hover': {
-    //   borderColor: '#fcfaf2',
-    //   boxShadow: '10px 10px 10px #011E3D'
-    // }
   },
   cardHeader: {
     margin: '2%',
@@ -29,7 +25,9 @@ const styles = {
   cardBody: {
     display: 'block',
     margin: '2%',
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+    textDecoration: 'none',
+    color: '#011E3D',
   },
   cardImage: {
     position: 'relative',
@@ -42,7 +40,6 @@ const styles = {
   link: {
     textDecoration: 'none'
   }
-  // add media query for making the cards 100% width when small screen
 }
 
 
@@ -50,7 +47,7 @@ const styles = {
 function Project(props) {
   return (
     <div style={styles.card}>
-      <a href={props.url} style={styles.link}>
+      <a target="_blank" rel="noreferrer" href={props.url} style={styles.link}>
         <div>
           <h3 style={styles.cardHeader}>{props.title}</h3>
         </div>
@@ -59,6 +56,7 @@ function Project(props) {
           <img style={styles.cardImage} src={props.imageSrc} alt={props.imageAlt} />
         </div>
       </a>
+      <a target="_blank" rel="noreferrer" href={props.repo} style={styles.cardBody} >Link to Github Repo</a>
     </div>
   );
 }
